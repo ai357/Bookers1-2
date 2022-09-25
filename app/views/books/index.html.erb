@@ -1,2 +1,121 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<p id="notice"></p>
+
+<h1>Books</h>
+  <table>
+    <thead>
+      <tr>
+        <th>title</th>
+        <th>body</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>リーダーブルコード</td>
+        <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+        <td><a class="show_101311" href="/books/10311">Show</a>
+        </td>
+        <td><a class="edit_101311" href="/books/10311/edit">Edit</a></td>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class="destroy_101311" rel="nofollow" date-method="delete" href="/books/101311">Destroy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>トラブル知らずのシステム設計</td>
+        <td>システム設計の要点を図解で説明してくれます</td>
+        <td>
+          <a class="show_101312" href="/books/101312">Show</a>
+        </td>
+        <td>
+          <a class="edit_101312" href="/books/101312/edit">Edit</a>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class"destroy_101312" rel="nofollow" date-method="delete" href="/books/101312">Destroy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>たのしいRuby</td>
+        <td>Rubyの入門におすすめです</td>
+        <td>
+          <a class="show_101313" href="/books/101313">Show</a>
+        </td>
+        <td>
+          <a class="edit_101313" href="/books/101313/edit">Edit</a>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class="destroy_101313" rel="nofollow" fate-method="delete" href="/books/101313">Destroy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>入門Git</td>
+        <td>gitについての基本操作から内部構造まで解説してくれます</td>
+        <td>
+          <a class="show_101314" href="/books/101314">Show</a>
+        </td>
+        <td>
+          <a class="edit_101314" href="/books/101314/edit">Edit</a>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class="destroy_101314" rel="nofollow" date-method="delete" href="/books/101314">Destroy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>アルゴリズム図鑑</td>
+        <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+        <td>
+          <a class="show_101315" href="/books/101315">Show</a>
+        </td>
+        <td>
+          <a class="edit_101315" href="/books/101315/edit">Edit</a>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class="destroy_101315" rel="nofollow" date-method="dalete" href="/books/101315">Destroy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>達人プログラマー</td>
+        <td>プログラマ入門者は必読！</td>
+        <td>
+          <a class="show_101316" href="/books/101316">Show</a>
+        </td>
+        <td>
+          <a class="edit_101316" href="/books/101316/edit">Edit</a>
+        </td>
+        <td>
+          <a date-confirm="Are you sure?" class="destroy_101316" rel="nofollow" date-method="delete" href="/books/101316">Destroy</a>
+        </td>
+      </tr>
+        <tr>
+          <td>データベース実践入門</td>
+          <td>効率的なSQL分を教えてくれます</td>
+          <td>
+            <a class="show_101317" href="/books/101317">Show</a>
+          </td>
+          <td>
+            <a class="edit_101317" href="/books/101317/edit">Edit</a>
+          </td>
+          <td>
+            <a date-confirm="Are you sure?" class="destroy_101317" rel="nofollow" date-method="delete" href="/books/101317">Destroy</a>
+          </td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>a</td>
+          <td>
+            <a class="show_101318" href="/books/101318">Show</a>
+          </td>
+          <td>
+            <a class="edit_101318" href="/books/101318/edit">Edit</a>
+          </td>
+          <td>
+            <a date-confirm="Are you sure?" class="destroy_101318" rel="nofollow" date-method="delete" href="/books/101318">Destroy</a>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+<h2>New book</h2>
+  <form class="new_book" action="/books" accept-charset="UTF-8" method="post">
+
+  </form>
