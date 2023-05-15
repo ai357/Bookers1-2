@@ -11,11 +11,12 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
-  # 編集
+  # 編集ページ
   def edit
     @book = Book.find(params[:id])
   end
 
+  # 削除機能
   def destroy
     book = Book.find(params[:id])
     book.destroy
