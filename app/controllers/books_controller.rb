@@ -1,11 +1,12 @@
 class BooksController < ApplicationController
 
-  # 一覧
+  # 一覧ページ
   def index
     @book = Book.new
     @books = Book.all
   end
 
+  # 詳細ページ
   def show
     @book = Book.find(params[:id])
   end
