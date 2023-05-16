@@ -27,9 +27,10 @@ class BooksController < ApplicationController
   def create
     # Bookモデルにデータを入れる枠を作成（空のインスタンスを作成）
     @book = Book.new(book_params)
-    # 保存に成功
+    # 保存に成功した場合
     if @book.save
        redirect_to book_path(@book.id), notice: "notice:Book was successfully created."
+    # 保存に失敗
     else
        @books = Book.all
        render :index
