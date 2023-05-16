@@ -30,8 +30,9 @@ class BooksController < ApplicationController
     # 保存に成功した場合
     if @book.save
        redirect_to book_path(@book.id), notice: "notice:Book was successfully created."
-    # 保存に失敗
+    # 保存に失敗した場合
     else
+      # Bookモデルに入っているデータすべて
        @books = Book.all
        render :index
     end
