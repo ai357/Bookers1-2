@@ -25,9 +25,9 @@ class BooksController < ApplicationController
 
   # 投稿機能 　
   def create
-    # Bookモデルにデータを入れる枠を作成（空のインスタンスを
+    # Bookモデルにデータを入れる枠を作成（空のインスタンスを作成）
     @book = Book.new(book_params)
-    # 
+    # 保存に成功
     if @book.save
        redirect_to book_path(@book.id), notice: "notice:Book was successfully created."
     else
