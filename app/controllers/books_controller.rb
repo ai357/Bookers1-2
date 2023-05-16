@@ -38,6 +38,7 @@ class BooksController < ApplicationController
     end
   end
 
+  # 更新
   def update
     @book = Book.find(params[:id])
     if @book.update(book_params)
