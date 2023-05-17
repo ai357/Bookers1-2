@@ -4,6 +4,7 @@ class HomesController < ApplicationController
   def top
   end
   
+  # 一覧
   def index
   end
     
