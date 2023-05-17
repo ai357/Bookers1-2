@@ -42,6 +42,7 @@ class BooksController < ApplicationController
   def update
     # Bookモデルにあるデータから１つ探す
     @book = Book.find(params[:id])
+    # データを更新
     if @book.update(book_params)
        redirect_to book_path(@book.id), notice: "notice:Book was successfully updated."
     else
