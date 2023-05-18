@@ -44,6 +44,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     # データを更新
     if @book.update(book_params)
+      # book/viewに遷移し、お知らせを
        redirect_to book_path(@book.id), notice: "notice:Book was successfully updated."
     else
        render :edit
