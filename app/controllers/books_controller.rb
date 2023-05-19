@@ -36,6 +36,7 @@ class BooksController < ApplicationController
     else
       # Bookモデルに入っているデータすべて
        @books = Book.all
+      # 一覧ページに遷移
        render :index
     end
   end
