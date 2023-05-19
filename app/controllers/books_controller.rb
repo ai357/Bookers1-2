@@ -20,6 +20,7 @@ class BooksController < ApplicationController
   def destroy
     # bookモデルから１つ探す
     book = Book.find(params[:id])
+    # 探したデータを削除（物理削除）
     book.destroy
     redirect_to books_path
   end
