@@ -50,6 +50,7 @@ class BooksController < ApplicationController
       # book/viewに遷移し、お知らせを
        redirect_to book_path(@book.id), notice: "notice:Book was successfully updated."
     else
+      # 編集ページに遷移
        render :edit
     end
   end
